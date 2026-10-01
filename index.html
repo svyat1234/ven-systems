@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AERON — вентиляционные системы</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="./main.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__logo">
+                    <a href="/" class="header__logo-link">
+                        <img src="images/logo.svg" alt="AERON" class="header__logo-img">
+                    </a>
+                </div>
+                <!-- /.header__logo -->
+                <button class="header__menu-toggle" type="button" aria-expanded="false" aria-controls="header-menu" aria-label="Открыть меню">
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                    <span class="header__burger-line"></span>
+                </button>
+                <div class="header__menu" id="header-menu">
+                    <nav class="header__nav" aria-label="Основная навигация">
+                        <a href="#" class="header__link header__link--catalog">
+                            <span class="header__menu-icon">
+                                <span class="header__menu-icon-line"></span>
+                                <span class="header__menu-icon-line"></span>
+                                <span class="header__menu-icon-line"></span>
+                            </span>
+                            Каталог
+                        </a>
+                        <a href="#" class="header__link">Решения</a>
+                        <a href="#" class="header__link">Производство</a>
+                        <a href="#" class="header__link">Проекты</a>
+                        <a href="#" class="header__link">О компании</a>
+                        <a href="#" class="header__link">Контакты</a>
+                    </nav>
+                    <!-- /.header__nav -->
+                    <div class="header__action">
+                        <a href="tel:+7 (495) 123-45-67" class="header__phone">+7 (495) 123-45-67</a>
+                        <a href="mailto:info@aeron.ru" class="header__email">info@aeron.ru</a>
+                        <button class="header__button">
+                            <span class="header__button-text">Получить КП</span>
+                            <span class="header__button-icon">
+                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 1L13 5M13 5L9 9M13 5H1" stroke="#090A0D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <!-- /.header__action -->
+                </div>
+                <!-- /.header__menu -->
+            </div>
+            <!-- /.header__content -->
+        </div>
+        <!-- /.container -->
+    </header>
+    <!-- /.header -->
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero__inner">
+                <div class="hero__info">
+                    <p class="hero__headline">01 / AERON ENGINEERING</p>
+                    <h1 class="hero__title">
+                        <span class="hero__title-accent">Технологии</span><br>
+                        <span class="hero__title-decor">
+                            <img src="images/hero-title-accent.svg" alt="" class="hero__title-decor-img">чистого
+                        </span>
+                        воздуха
+                    </h1>
+                    <div class="hero__content">
+                        <p class="hero__description">
+                            Комплексные решения промышленной вентиляции<br>
+                            и&nbsp;кондиционирования для коммерческих,<br>
+                            производственных и&nbsp;складских объектов.
+                        </p>
+                        <div class="hero__actions">
+                            <button class="hero__button hero__button--primary">Оставить заявку</button>
+                            <button class="hero__button hero__button--secondary">
+                                <span class="hero__button-text">Смотреть проекты</span>
+                                <span class="hero__button-icon">
+                                    <img src="images/arrow-right.svg" alt="">
+                                </span>
+                            </button>
+                        </div>
+                        <p class="hero__label">AERON / 500+ PROJECTS</p>
+                    </div>
+                    <!-- /.hero__content -->
+                </div>
+                <!-- /.hero__info -->
+                <div class="hero__visual">
+                    <img src="images/hero.jpg" alt="Проект AERON" class="hero__img">
+                    <div class="hero__card">
+                        <div class="hero__card-icon">
+                            <img src="images/file.svg" alt="" class="hero__card-icon-img">
+                        </div>
+                        <p class="hero__card-text">Инженерия,<br>которую видно.</p>
+                        <p class="hero__card-tags">BIM / ГОСТ / ISO</p>
+                    </div>
+                    <!-- /.hero__card -->
+                </div>
+                <!-- /.hero__visual -->
+            </div>
+            <!-- /.hero__inner -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.hero -->
+
+    <section class="products">
+        <div class="container">
+            <div class="products__heading">
+                <p class="products__label">/ ИНЖЕНЕРНЫЕ СТАНДАРТЫ</p>
+                <div class="products__heading-row">
+                    <h2 class="products__title">Оборудование<br>для вентиляции</h2>
+                    <p class="products__desc">Комплексные решения для любых объектов —<br>от отдельных элементов до готовых систем.</p>
+                </div>
+            </div>
+            <!-- /.products__heading -->
+
+            <div class="products__grid">
+                <!-- Card 01 — Big -->
+                <div class="products__card products__card--big">
+                    <div class="products__card-img">
+                        <img src="" alt="" class="products__card-img-el">
+                    </div>
+                    <div class="products__card-body">
+                        <p class="products__card-title">Воздуховоды</p>
+                        <p class="products__card-subtitle">Оцинкованные, из нержавеющей стали и другие решения</p>
+                    </div>
+                    <div class="products__card-bottom">
+                        <a href="#" class="products__card-link">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1L13 5M13 5L9 9M13 5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="products__card">
+                    <div class="products__card-img">
+                        <img src="" alt="" class="products__card-img-el">
+                    </div>
+                    <div class="products__card-body">
+                        <p class="products__card-title">Вентиляторы</p>
+                        <p class="products__card-subtitle">Осевые, центробежные, крышные</p>
+                    </div>
+                    <div class="products__card-bottom">
+                        <a href="#" class="products__card-link">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1L13 5M13 5L9 9M13 5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="products__card">
+                    <div class="products__card-img">
+                        <img src="" alt="" class="products__card-img-el">
+                    </div>
+                    <div class="products__card-body">
+                        <p class="products__card-title">Канальные<br>вентиляторы</p>
+                        <p class="products__card-subtitle">Компактные и мощные решения</p>
+                    </div>
+                    <div class="products__card-bottom">
+                        <a href="#" class="products__card-link">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1L13 5M13 5L9 9M13 5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="products__card">
+                    <div class="products__card-img">
+                        <img src="" alt="" class="products__card-img-el">
+                    </div>
+                    <div class="products__card-body">
+                        <p class="products__card-title">Детали систем<br>вентиляции</p>
+                        <p class="products__card-subtitle">Переходы, тройники, заслонки и многое другое</p>
+                    </div>
+                    <div class="products__card-bottom">
+                        <a href="#" class="products__card-link">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1L13 5M13 5L9 9M13 5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="products__card">
+                    <div class="products__card-img">
+                        <img src="" alt="" class="products__card-img-el">
+                    </div>
+                    <div class="products__card-body">
+                        <p class="products__card-title">Приборы<br>автоматики</p>
+                        <p class="products__card-subtitle">Датчики, контроллеры, приводы</p>
+                    </div>
+                    <div class="products__card-bottom">
+                        <a href="#" class="products__card-link">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1L13 5M13 5L9 9M13 5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 6 — Flat -->
+                <div class="products__card products__card--flat">
+                    <div class="products__card-body">
+                        <p class="products__card-title">Приточно-вытяжная<br>вентиляция</p>
+                        <p class="products__card-subtitle">Готовые решения для комфортного микроклимата</p>
+                    </div>
+                    <div class="products__card-bottom">
+                        <a href="#" class="products__card-link">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1L13 5M13 5L9 9M13 5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 7 — Flat -->
+                <div class="products__card products__card--flat">
+                    <div class="products__card-body">
+                        <p class="products__card-title">Вентиляционные<br>установки</p>
+                        <p class="products__card-subtitle">Центральные и компактные модели</p>
+                    </div>
+                    <div class="products__card-bottom">
+                        <a href="#" class="products__card-link">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1L13 5M13 5L9 9M13 5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="products__card">
+                    <div class="products__card-img">
+                        <img src="" alt="" class="products__card-img-el">
+                    </div>
+                    <div class="products__card-body">
+                        <p class="products__card-title">Крепеж для<br>вентиляции</p>
+                        <p class="products__card-subtitle">Хомуты, подвесы, кронштейны</p>
+                    </div>
+                    <div class="products__card-bottom">
+                        <a href="#" class="products__card-link">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1L13 5M13 5L9 9M13 5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="products__card">
+                    <div class="products__card-img">
+                        <img src="" alt="" class="products__card-img-el">
+                    </div>
+                    <div class="products__card-body">
+                        <p class="products__card-title">Фильтры для<br>вентиляции</p>
+                        <p class="products__card-subtitle">Кассетные, карманные, HEPA и угольные</p>
+                    </div>
+                    <div class="products__card-bottom">
+                        <a href="#" class="products__card-link">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1L13 5M13 5L9 9M13 5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 10 -->
+                <div class="products__card">
+                    <div class="products__card-img">
+                        <img src="" alt="" class="products__card-img-el">
+                    </div>
+                    <div class="products__card-body">
+                        <p class="products__card-title">Вентиляционные<br>решетки и диффузоры</p>
+                        <p class="products__card-subtitle">Для любых интерьеров и задач</p>
+                    </div>
+                    <div class="products__card-bottom">
+                        <a href="#" class="products__card-link">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1L13 5M13 5L9 9M13 5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 11 -->
+                <div class="products__card">
+                    <div class="products__card-img">
+                        <img src="" alt="" class="products__card-img-el">
+                    </div>
+                    <div class="products__card-body">
+                        <p class="products__card-title">Канальные<br>нагреватели</p>
+                        <p class="products__card-subtitle">Электрические и водяные</p>
+                    </div>
+                    <div class="products__card-bottom">
+                        <a href="#" class="products__card-link">
+                            <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1L13 5M13 5L9 9M13 5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- /.products__grid -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.products -->
+
+    <section class="services">
+        <div class="services__content container">
+            <div class="services__heading">
+                <span class="services__sub">/ НАШИ УСЛУГИ</span>
+                <h2 class="services__title">Проектируем, производим и обслуживаем</h2>
+                <p class="services__text">
+                    Полный цикл работ — от идеи <br> до стабильной эксплуатации.
+                </p>
+                <a href="#" class="services__link">Подробнее о проектировании</a>
+            </div>
+            <!-- /.services__heading -->
+            <div class="services__img-wrap">
+                <img src="" alt="" class="services__img">
+            </div>
+
+            <div class="services__tabs">
+                <button class="services__tab services__tab--active">Проектирование</button>
+                <button class="services__tab">Производство</button>
+                <button class="services__tab">Монтаж</button>
+                <button class="services__tab">Сервис</button>
+            </div>
+            <!-- /.services__tabs -->
+        </div>
+        <!-- /.services__content container -->
+    </section>
+    <!-- /.services -->
+
+    <section class="about">
+        <div class="about__content container">
+            <div class="about__heading">
+                <span class="about__sub">/ О КОМПАНИИ</span>
+                <h2 class="about__title">Мы не продаём воздуховоды. Мы создаём среду.</h2>
+            </div>
+            <!-- /.about__heading -->
+            <div class="about__info">
+                <p class="about__text">От инженерного расчёта и BIM-модели до производства, монтажа и сервисного сопровождения - один контур ответственности.</p>
+                <div class="about__stats">
+                    <div class="about__stat">
+                        <span class="about__stat-title">500+</span>
+                        <span class="about__stat-text">проектов</span>
+                    </div>
+                    <div class="about__stat">
+                        <span class="about__stat-title">120+</span>
+                        <span class="about__stat-text">компаний</span>
+                    </div>
+                    <div class="about__stat">
+                        <span class="about__stat-title">12+</span>
+                        <span class="about__stat-text">лет на рынке</span>
+                    </div>
+                </div>
+                <!-- /.about__stats -->
+                <div class="about__img-wrap">
+                    <img src="" alt="" class="about__img">
+                    <span class="about__img-text">Производство / монтаж / запуск</span>
+                </div>
+                <!-- /.about__img-wrap -->
+            </div>
+            <!-- /.about__info -->
+        </div>
+        <!-- /.about__content container -->
+    </section>
+    <!-- /.about -->
+
+    <section class="process">
+        <div class="container">
+            <div class="process__heading">
+                <span class="process__sub">/ ПРОЦЕСС</span>
+                <h2 class="process__title">От замера до<br>паспортизации.</h2>
+            </div>
+            <!-- /.process__heading -->
+            <div class="process__list">
+                <div class="process__item">
+                    <span class="process__num">01</span>
+                    <span class="process__name">Замер и ТЗ</span>
+                    <span class="process__desc">Объект, чертежи, техническое задание</span>
+                </div>
+                <!-- /.process__item -->
+                <div class="process__item">
+                    <span class="process__num">02</span>
+                    <span class="process__name">Инженерный расчёт</span>
+                    <span class="process__desc">Сечения, шум, теплопотери, BIM</span>
+                </div>
+                <!-- /.process__item -->
+                <div class="process__item">
+                    <span class="process__num">03</span>
+                    <span class="process__name">Производство</span>
+                    <span class="process__desc">Воздуховоды и фасонные элементы</span>
+                </div>
+                <!-- /.process__item -->
+                <div class="process__item">
+                    <span class="process__num">04</span>
+                    <span class="process__name">Монтаж и ПНР</span>
+                    <span class="process__desc">Герметизация, автоматика, испытания</span>
+                </div>
+                <!-- /.process__item -->
+                <div class="process__item">
+                    <span class="process__num">05</span>
+                    <span class="process__name">Сервис</span>
+                    <span class="process__desc">Регламент и долгосрочное сопровождение</span>
+                </div>
+                <!-- /.process__item -->
+            </div>
+            <!-- /.process__list -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.process -->
+
+    
+    <section class="solutions">
+        <div class="container">
+            <div class="solutions__heading">
+                <span class="solutions__sub">/ РЕШЕНИЯ</span>
+                <span class="solutions__counter">01 / 03</span>
+                <h2 class="solutions__title">Разные задачи.<br>Одна инженерная команда.</h2>
+            </div>
+            <!-- /.solutions__heading -->
+            <div class="solutions__list">
+                <a href="#" class="solutions__item">
+                    <span class="solutions__num">01</span>
+                    <span class="solutions__name">Собственникам</span>
+                    <span class="solutions__desc">Контроль бюджета, сроков и рисков - от первого расчёта до сдачи объекта.</span>
+                    <span class="solutions__arrow">
+                        <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.5 1L18 6M18 6L12.5 11M18 6H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </a>
+                <!-- /.solutions__item -->
+                <a href="#" class="solutions__item solutions__item--active">
+                    <span class="solutions__num">02</span>
+                    <span class="solutions__name">Инженерам</span>
+                    <span class="solutions__desc">BIM, рабочая документация, расчёты и техническое сопровождение сложных проектов.</span>
+                    <span class="solutions__arrow">
+                        <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.5 1L18 6M18 6L12.5 11M18 6H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </a>
+                <!-- /.solutions__item -->
+                <a href="#" class="solutions__item">
+                    <span class="solutions__num">03</span>
+                    <span class="solutions__name">Закупкам</span>
+                    <span class="solutions__desc">Прозрачные спецификации, сертификаты, сроки производства и понятное КП.</span>
+                    <span class="solutions__arrow">
+                        <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.5 1L18 6M18 6L12.5 11M18 6H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </a>
+                <!-- /.solutions__item -->
+            </div>
+            <!-- /.solutions__list -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.solutions -->
+
+    <section class="feature">
+        <div class="container">
+            <div class="feature__top">
+                <div class="feature__heading">
+                    <span class="feature__sub">/ ИНЖЕНЕРНЫЙ СТАНДАРТ</span>
+                    <h2 class="feature__title">Когда система работает<br>на уровне архитектуры.</h2>
+                </div>
+                <!-- /.feature__heading -->
+                <div class="feature__card">
+                    <div class="feature__card-head">
+                        <span class="feature__card-value">ISO 5-8</span>
+                        <span class="feature__card-tag">Фармацевтика / чистые помещения</span>
+                    </div>
+                    <!-- /.feature__card-head -->
+                    <p class="feature__card-text">
+                        <span class="feature__card-text-line">25 000 м³/ч воздухообмена</span>
+                        <span class="feature__card-text-line">BIM-модель / пусконаладка / сервис</span>
+                    </p>
+                    <a href="#" class="feature__card-link">
+                        <span class="feature__card-link-text">Подробнее о проектах</span>
+                        <span class="feature__card-link-icon">
+                            <svg width="19" height="12" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.5 1L18 6M18 6L12.5 11M18 6H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                    </a>
+                    <!-- /.feature__card-link -->
+                </div>
+                <!-- /.feature__card -->
+            </div>
+            <!-- /.feature__top -->
+            <div class="feature__img-wrap">
+                <img src="images/standart.jpg" alt="Чистое помещение AERON с системами вентиляции" class="feature__img">
+            </div>
+            <!-- /.feature__img-wrap -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.feature -->
+
+        <section class="standatrs">
+        <div class="container">
+            <div class="standatrs__heading">
+                <span class="standatrs__sub">/ ИНЖЕНЕРНЫЕ СТАНДАРТЫ</span>
+                <h2 class="standatrs__title">Типичные проблемы рынка -<br>и наши решения.</h2>
+            </div>
+            <!-- /.standatrs__heading -->
+            <div class="standatrs__grid">
+                <!-- Card 01 -->
+                <div class="standatrs__card">
+                    <div class="standatrs__card-top">
+                        <div class="standatrs__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="standatrs__card-title">Толщина стали строго по ГОСТ</h3>
+                        <p class="standatrs__card-problem">Другие заводы занижают толщину листа</p>
+                    </div>
+                    <!-- /.standatrs__card-top -->
+                    <div class="standatrs__solution">
+                        <span class="standatrs__solution-bar"></span>
+                        <p class="standatrs__solution-text">Контроль микрометром, оцинковка ≥140 г/м²</p>
+                    </div>
+                    <!-- /.standatrs__solution -->
+                </div>
+                <!-- /.standatrs__card -->
+
+                <!-- Card 02 -->
+                <div class="standatrs__card">
+                    <div class="standatrs__card-top">
+                        <div class="standatrs__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="standatrs__card-title">Проектирование без ошибок</h3>
+                        <p class="standatrs__card-problem">Неверный расчёт сечений ведёт к шуму</p>
+                    </div>
+                    <!-- /.standatrs__card-top -->
+                    <div class="standatrs__solution">
+                        <span class="standatrs__solution-bar"></span>
+                        <p class="standatrs__solution-text">Штат дипломированных инженеров-проектировщиков</p>
+                    </div>
+                    <!-- /.standatrs__solution -->
+                </div>
+                <!-- /.standatrs__card -->
+
+                <!-- Card 03 -->
+                <div class="standatrs__card">
+                    <div class="standatrs__card-top">
+                        <div class="standatrs__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="standatrs__card-title">Швейцарские линии</h3>
+                        <p class="standatrs__card-problem">Кустарная гибка нарушает геометрию</p>
+                    </div>
+                    <!-- /.standatrs__card-top -->
+                    <div class="standatrs__solution">
+                        <span class="standatrs__solution-bar"></span>
+                        <p class="standatrs__solution-text">Станки Spiro гарантируют герметичный шов класса П</p>
+                    </div>
+                    <!-- /.standatrs__solution -->
+                </div>
+                <!-- /.standatrs__card -->
+
+                <!-- Card 04 -->
+                <div class="standatrs__card">
+                    <div class="standatrs__card-top">
+                        <div class="standatrs__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="standatrs__card-title">Соблюдение сроков</h3>
+                        <p class="standatrs__card-problem">Задержка поставок останавливает работы</p>
+                    </div>
+                    <!-- /.standatrs__card-top -->
+                    <div class="standatrs__solution">
+                        <span class="standatrs__solution-bar"></span>
+                        <p class="standatrs__solution-text">Финансовая ответственность за каждый день просрочки</p>
+                    </div>
+                    <!-- /.standatrs__solution -->
+                </div>
+                <!-- /.standatrs__card -->
+
+                <!-- Card 05 -->
+                <div class="standatrs__card">
+                    <div class="standatrs__card-top">
+                        <div class="standatrs__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3 class="standatrs__card-title">Широкая география монтажа</h3>
+                        <p class="standatrs__card-problem">Сложно найти монтажников в регионах</p>
+                    </div>
+                    <!-- /.standatrs__card-top -->
+                    <div class="standatrs__solution">
+                        <span class="standatrs__solution-bar"></span>
+                        <p class="standatrs__solution-text">Выездные бригады по всей территории РФ</p>
+                    </div>
+                    <!-- /.standatrs__solution -->
+                </div>
+                <!-- /.standatrs__card -->
+            </div>
+            <!-- /.standatrs__grid -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.standatrs -->
+
+    <section class="projects">
+        <div class="container">
+            <div class="projects__heading">
+                <span class="projects__sub">/ ПРОЕКТЫ</span>
+                <h2 class="projects__title">Объекты, где инженерия<br>становится частью архитектуры.</h2>
+            </div>
+            <!-- /.projects__heading -->
+            <div class="projects__gallery">
+                <div class="projects__item projects__item--main">
+                    <img src="images/projects-3.png" alt="Складской объект с инженерными системами вентиляции" class="projects__img">
+                    <div class="projects__tags">
+                        <div class="projects__tag projects__tag--dark">
+                            <span class="projects__tag-name">Фармацевтика</span>
+                            <span class="projects__tag-meta">ISO 5-8 / 2024</span>
+                        </div>
+                        <!-- /.projects__tag -->
+                        <div class="projects__tag projects__tag--light">
+                            <span class="projects__tag-name">Логистика / 45 000 м²</span>
+                        </div>
+                        <!-- /.projects__tag -->
+                    </div>
+                    <!-- /.projects__tags -->
+                </div>
+                <!-- /.projects__item -->
+                <div class="projects__item">
+                    <img src="images/projects-2.png" alt="Чистое помещение фармацевтического производства" class="projects__img">
+                </div>
+                <!-- /.projects__item -->
+                <div class="projects__item">
+                    <img src="images/projects-1.png" alt="Пищевое производство с системами вентиляции" class="projects__img">
+                </div>
+                <!-- /.projects__item -->
+            </div>
+            <!-- /.projects__gallery -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.projects -->
+
+    <section class="docs">
+        <div class="container">
+            <div class="docs__heading">
+                <span class="docs__sub">/ ДОКУМЕНТЫ</span>
+                <h2 class="docs__title">Сертификаты и<br>лицензии.</h2>
+            </div>
+            <!-- /.docs__heading -->
+            <div class="docs__grid">
+                <!-- Card 01 -->
+                <a href="#" class="docs__card">
+                    <div class="docs__icon">
+                        <img src="images/file.svg" alt="" class="docs__icon-img">
+                    </div>
+                    <div class="docs__card-body">
+                        <span class="docs__card-title">Свидетельство СРО</span>
+                        <span class="docs__card-text">На проектирование ОВ</span>
+                    </div>
+                    <!-- /.docs__card-body -->
+                </a>
+                <!-- /.docs__card -->
+
+                <!-- Card 02 -->
+                <a href="#" class="docs__card">
+                    <div class="docs__icon">
+                        <img src="images/file.svg" alt="" class="docs__icon-img">
+                    </div>
+                    <div class="docs__card-body">
+                        <span class="docs__card-title">Свидетельство СРО</span>
+                        <span class="docs__card-text">На строительно-монтажные работы</span>
+                    </div>
+                    <!-- /.docs__card-body -->
+                </a>
+                <!-- /.docs__card -->
+
+                <!-- Card 03 -->
+                <a href="#" class="docs__card">
+                    <div class="docs__icon">
+                        <img src="images/file.svg" alt="" class="docs__icon-img">
+                    </div>
+                    <div class="docs__card-body">
+                        <span class="docs__card-title">Сертификат ISO 9001</span>
+                        <span class="docs__card-text">Менеджмент качества</span>
+                    </div>
+                    <!-- /.docs__card-body -->
+                </a>
+                <!-- /.docs__card -->
+
+                <!-- Card 04 -->
+                <a href="#" class="docs__card">
+                    <div class="docs__icon">
+                        <img src="images/file.svg" alt="" class="docs__icon-img">
+                    </div>
+                    <div class="docs__card-body">
+                        <span class="docs__card-title">Лицензия МЧС</span>
+                        <span class="docs__card-text">На монтаж систем дымоудаления</span>
+                    </div>
+                    <!-- /.docs__card-body -->
+                </a>
+                <!-- /.docs__card -->
+
+                <!-- Card 05 -->
+                <a href="#" class="docs__card">
+                    <div class="docs__icon">
+                        <img src="images/file.svg" alt="" class="docs__icon-img">
+                    </div>
+                    <div class="docs__card-body">
+                        <span class="docs__card-title">Сертификат ГОСТ Р</span>
+                        <span class="docs__card-text">На воздуховоды нашего производства</span>
+                    </div>
+                    <!-- /.docs__card-body -->
+                </a>
+                <!-- /.docs__card -->
+
+                <!-- Card 06 -->
+                <a href="#" class="docs__card">
+                    <div class="docs__icon">
+                        <img src="images/file.svg" alt="" class="docs__icon-img">
+                    </div>
+                    <div class="docs__card-body">
+                        <span class="docs__card-title">Паспорта вентиляции</span>
+                        <span class="docs__card-text">Протоколы испытаний систем</span>
+                    </div>
+                    <!-- /.docs__card-body -->
+                </a>
+                <!-- /.docs__card -->
+            </div>
+            <!-- /.docs__grid -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.docs -->
+
+    <section class="faq">
+        <div class="container">
+            <div class="faq__heading">
+                <span class="faq__sub">/ ЧАСТЫЕ ВОПРОСЫ</span>
+                <h2 class="faq__title">Ответы на важные <br>вопросы</h2>
+            </div>
+            <!-- /.faq__heading -->
+            <div class="faq__list">
+
+                <!-- Card 01 -->
+                <div class="faq__item faq__item--active">
+                    <button type="button" class="faq__question" aria-expanded="true" aria-controls="faq-answer-1">
+                        <span class="faq__question-text">Как быстро изготовите партию воздуховодов?</span>
+                        <span class="faq__icon">
+                            <svg class="faq__icon-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <!-- /.faq__icon -->
+                    </button>
+                    <!-- /.faq__question -->
+                    <div class="faq__answer" id="faq-answer-1">
+                        <p class="faq__answer-text">От 1 до 3 рабочих дней, до 1500 м² металла за смену.</p>
+                    </div>
+                    <!-- /.faq__answer -->
+                </div>
+                <!-- /.faq__item -->
+
+                <!-- Card 02 -->
+                <div class="faq__item">
+                    <button type="button" class="faq__question" aria-expanded="false" aria-controls="faq-answer-2">
+                        <span class="faq__question-text">Входите ли в СРО и даёте гарантию?</span>
+                        <span class="faq__icon">
+                            <svg class="faq__icon-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <!-- /.faq__icon -->
+                    </button>
+                    <!-- /.faq__question -->
+                    <div class="faq__answer" id="faq-answer-2">
+                        <p class="faq__answer-text">Да, СРО на проектирование и монтаж. Гарантия 2–5 лет.</p>
+                    </div>
+                    <!-- /.faq__answer -->
+                </div>
+                <!-- /.faq__item -->
+
+                <!-- Card 03 -->
+                <div class="faq__item">
+                    <button type="button" class="faq__question" aria-expanded="false" aria-controls="faq-answer-3">
+                        <span class="faq__question-text">Помогаете с проверками Роспотребнадзора?</span>
+                        <span class="faq__icon">
+                            <svg class="faq__icon-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <!-- /.faq__icon -->
+                    </button>
+                    <!-- /.faq__question -->
+                    <div class="faq__answer" id="faq-answer-3">
+                        <p class="faq__answer-text">Да, предоставляем паспорта, акты испытаний и сертификаты.</p>
+                    </div>
+                    <!-- /.faq__answer -->
+                </div>
+                <!-- /.faq__item -->
+
+                <!-- Card 04 -->
+                <div class="faq__item">
+                    <button type="button" class="faq__question" aria-expanded="false" aria-controls="faq-answer-4">
+                        <span class="faq__question-text">Работаете по всей России?</span>
+                        <span class="faq__icon">
+                            <svg class="faq__icon-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <!-- /.faq__icon -->
+                    </button>
+                    <!-- /.faq__question -->
+                    <div class="faq__answer" id="faq-answer-4">
+                        <p class="faq__answer-text">Производство в МО, доставка по всей РФ, выездные бригады.</p>
+                    </div>
+                    <!-- /.faq__answer -->
+                </div>
+                <!-- /.faq__item -->
+
+                <!-- Card 05 -->
+                <div class="faq__item">
+                    <button type="button" class="faq__question" aria-expanded="false" aria-controls="faq-answer-5">
+                        <span class="faq__question-text">Какие энергоэффективные технологии используете?</span>
+                        <span class="faq__icon">
+                            <svg class="faq__icon-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <!-- /.faq__icon -->
+                    </button>
+                    <!-- /.faq__question -->
+                    <div class="faq__answer" id="faq-answer-5">
+                        <p class="faq__answer-text">Роторные и пластинчатые рекуператоры, частотное регулирование, интеллектуальная автоматизация.</p>
+                    </div>
+                    <!-- /.faq__answer -->
+                </div>
+                <!-- /.faq__item -->
+
+            </div>
+            <!-- /.faq__list -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.faq -->
+
+    <section class="feedback">
+        <div class="container">
+            <div class="feedback__inner">
+                <div class="feedback__content">
+                    <div class="feedback__heading">
+                        <span class="feedback__eyebrow">/ ГОТОВЫ НАЧАТЬ?</span>
+                        <h2 class="feedback__title">Расскажите о вашем объекте.</h2>
+                    </div>
+                    <!-- /.feedback__heading -->
+                    <div class="feedback__info">
+                        <p class="feedback__description">Отправьте ТЗ - инженерная команда подготовит предварительный расчёт в течение 2 часов.</p>
+                        <button type="button" class="feedback__button">Получить расчёт →</button>
+                    </div>
+                    <!-- /.feedback__info -->
+                </div>
+                <!-- /.feedback__content -->
+                <div class="feedback__contacts">
+                    <a class="feedback__phone" href="tel:+74951234567">+7 (495) 123-45-67</a>
+                    <a class="feedback__email" href="mailto:info@aeron-engineering.ru">info@aeron-engineering.ru</a>
+                    <span class="feedback__location">Москва · Работаем по РФ</span>
+                </div>
+                <!-- /.feedback__contacts -->
+            </div>
+            <!-- /.feedback__inner -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.feedback -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__top">
+                    <div class="footer__brand">
+                        <a href="#" class="footer__logo" aria-label="AERON — на главную">
+                            <img src="images/footer-logo.svg" alt="AERON — Engineering / Ventilation" class="footer__logo-img">
+                        </a>
+                        <p class="footer__description">
+                            Разработка, производство и обслуживание энергоэффективных систем промышленной вентиляции. Работаем со сложными инженерными задачами по стандартам ГОСТ.
+                        </p>
+                    </div>
+                    <!-- /.footer__brand -->
+                    <nav class="footer__links" aria-label="Разделы сайта">
+                        <div class="footer__column">
+                            <h2 class="footer__column-title">Услуги</h2>
+                            <a href="#" class="footer__link">Проектирование ОВ</a>
+                            <a href="#" class="footer__link">Монтажные работы</a>
+                            <a href="#" class="footer__link">Пусконаладка</a>
+                            <a href="#" class="footer__link">Сервисное обслуживание</a>
+                        </div>
+                        <div class="footer__column">
+                            <h2 class="footer__column-title">Продукция</h2>
+                            <a href="#" class="footer__link">Воздуховоды</a>
+                            <a href="#" class="footer__link">Промышленные вентиляторы</a>
+                            <a href="#" class="footer__link">Фильтры очистки</a>
+                            <a href="#" class="footer__link">Шкафы автоматики</a>
+                        </div>
+                        <div class="footer__column">
+                            <h2 class="footer__column-title">Компания</h2>
+                            <a href="#" class="footer__link">О компании</a>
+                            <a href="#" class="footer__link">Наши проекты</a>
+                            <a href="#" class="footer__link">Лицензии и СРО</a>
+                            <a href="#" class="footer__link">Производственная база</a>
+                        </div>
+                    </nav>
+                    <!-- /.footer__links -->
+                </div>
+                <!-- /.footer__top -->
+                <div class="footer__bottom">
+                    <p class="footer__copyright">© 2025 AERON Engineering. Все права защищены.</p>
+                    <nav class="footer__legal" aria-label="Правовая информация">
+                        <a href="#" class="footer__legal-link">Политика конфиденциальности</a>
+                        <a href="#" class="footer__legal-link">Карта сайта</a>
+                    </nav>
+                </div>
+                <!-- /.footer__bottom -->
+            </div>
+            <!-- /.footer__inner -->
+        </div>
+        <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
+
+</body>
+</html>
