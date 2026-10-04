@@ -2869,8 +2869,10 @@ Svyat future millioner Developer: Интро-секция задает общи�
 }
 
 .about-hero__sub,
-.values__sub,
-.about-mission__sub {
+.about-advantages__sub,
+.about-values__sub,
+.about-mission__sub,
+.about-responsibility__sub {
     display: block;
     font-family: 'Manrope', sans-serif;
     font-size: 10px;
@@ -2881,8 +2883,10 @@ Svyat future millioner Developer: Интро-секция задает общи�
 }
 
 .about-hero__title,
-.values__title,
-.about-mission__title {
+.about-advantages__title,
+.about-values__title,
+.about-mission__title,
+.about-responsibility__title {
     margin-top: 32px;
     font-size: 56px;
     font-weight: 500;
@@ -2934,29 +2938,37 @@ Svyat future millioner Developer: Интро-секция задает общи�
     color: var(--light-text);
 }
 
-/* ===================================================
-Svyat future millioner Developer: Сетка принципов формирует единый ритм карточек на широких экранах.
-=================================================== */
-.values {
+/* ===== About advantages & values ===== */
+.about-advantages,
+.about-values {
     padding: 104px 0;
+}
+
+.about-advantages {
     background-color: var(--light);
 }
 
-.values__heading {
+.about-values {
+    background-color: var(--light-bg);
+}
+
+.about-advantages__heading,
+.about-values__heading {
     margin-bottom: 56px;
 }
 
-.values__title {
+.about-advantages__title,
+.about-values__title {
     max-width: 800px;
 }
 
-.values__grid {
+.about-advantages__grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 16px;
 }
 
-.values__card {
+.about-advantages__card {
     display: flex;
     min-height: 280px;
     flex-direction: column;
@@ -2967,11 +2979,11 @@ Svyat future millioner Developer: Сетка принципов формируе
     transition: background-color 0.2s ease;
 }
 
-.values__card:hover {
+.about-advantages__card:hover {
     background-color: var(--light-bg);
 }
 
-.values__card-num {
+.about-advantages__card-num {
     margin-bottom: 48px;
     font-family: 'Manrope', sans-serif;
     font-size: 14px;
@@ -2980,40 +2992,112 @@ Svyat future millioner Developer: Сетка принципов формируе
     color: var(--accent);
 }
 
-.values__card-title {
+.about-advantages__card-title,
+.about-values__card-title {
     margin-bottom: 16px;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 800;
     line-height: 1.3;
     color: var(--dark);
-    font-weight: 800;
 }
 
-.values__card-text {
+.about-advantages__card-text,
+.about-values__card-text {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.55;
     color: var(--light-text);
 }
 
-/* ===================================================
-Svyat future millioner Developer: Контрастная финальная секция визуально завершает рассказ об ответственности.
-=================================================== */
-.about-mission {
+.about-values__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.about-values__card {
+    display: grid;
+    min-height: 220px;
+    grid-template-columns: 44px minmax(0, 1fr);
+    grid-template-rows: auto 1fr;
+    align-content: start;
+    gap: 12px 20px;
+    padding: 32px;
+    border: 1px solid transparent;
+    border-radius: 24px;
+    background-color: var(--light);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-values__card:hover {
+    transform: translateY(-3px);
+}
+
+.about-values__card-num {
+    display: flex;
+    grid-row: span 2;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background-color: var(--accent);
+    color: var(--light);
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.about-values__card-title {
+    grid-column: 2;
+    align-self: center;
+    margin: 0;
+}
+
+.about-values__card-text {
+    grid-column: 2;
+}
+
+/* ===== About mission & responsibility ===== */
+.about-mission,
+.about-responsibility {
     padding: 104px 0 112px;
     background-color: var(--light-bg);
 }
 
 .about-mission__content {
-    max-width: 1320px;
+     display: flex;
+     justify-content: space-between;
 }
 
-.about-mission__sub {
+.about-responsibility__content {
+    max-width: 1360px;
+}
+
+.about-mission__sub,
+.about-responsibility__sub {
     color: var(--light-text);
 }
 
-.about-mission__title {
-    color: var()--dark;
+.about-mission__title,
+.about-responsibility__title {
+    color: var(--dark);
+}
+
+.about-responsibility__title {
+    max-width: 1320px;
+}
+
+.about-mission__text {
+    max-width: 860px;
+    color: var(--light-text);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    background-color: var(--light);
+    padding: 50px;
+    border-radius: 20px;
 }
 
 /* ===================================================
@@ -3021,8 +3105,10 @@ Svyat future millioner Developer: На промежуточной ширине �
 =================================================== */
 @media (max-width: 1024px) {
     .about-hero,
-    .values,
-    .about-mission {
+    .about-mission,
+    .about-advantages,
+    .about-values,
+    .about-responsibility {
         padding-top: 80px;
         padding-bottom: 84px;
     }
@@ -3032,9 +3118,15 @@ Svyat future millioner Developer: На промежуточной ширине �
     }
 
     .about-hero__title,
-    .values__title,
-    .about-mission__title {
+    .about-mission__title,
+    .about-advantages__title,
+    .about-values__title,
+    .about-responsibility__title {
         font-size: 44px;
+    }
+
+    .about-mission__text {
+        font-size: 16px;
     }
 
     .about-hero__body {
@@ -3051,11 +3143,12 @@ Svyat future millioner Developer: На промежуточной ширине �
         max-width: none;
     }
 
-    .values__heading {
+    .about-advantages__heading,
+    .about-values__heading {
         margin-bottom: 44px;
     }
 
-    .values__grid {
+    .about-advantages__grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
@@ -3065,8 +3158,10 @@ Svyat future millioner Developer: На планшетах уменьшаются
 =================================================== */
 @media (max-width: 768px) {
     .about-hero,
-    .values,
-    .about-mission {
+    .about-mission,
+    .about-advantages,
+    .about-values,
+    .about-responsibility {
         padding-top: 64px;
         padding-bottom: 68px;
     }
@@ -3076,8 +3171,10 @@ Svyat future millioner Developer: На планшетах уменьшаются
     }
 
     .about-hero__title,
-    .values__title,
-    .about-mission__title {
+    .about-mission__title,
+    .about-advantages__title,
+    .about-values__title,
+    .about-responsibility__title {
         font-size: 36px;
     }
 
@@ -3103,17 +3200,27 @@ Svyat future millioner Developer: На планшетах уменьшаются
         width: 100%;
     }
 
-    .values__heading {
+    .about-advantages__heading,
+    .about-values__heading {
         margin-bottom: 36px;
     }
 
-    .values__card {
+    .about-advantages__card {
         min-height: 260px;
         padding: 24px 20px;
     }
 
-    .values__card-num {
+    .about-advantages__card-num {
         margin-bottom: 36px;
+    }
+
+    .about-values__card {
+        min-height: 220px;
+        padding: 24px;
+    }
+
+    .about-values__card-num {
+        margin: 0;
     }
 }
 
@@ -3122,8 +3229,10 @@ Svyat future millioner Developer: На узких экранах карточк�
 =================================================== */
 @media (max-width: 480px) {
     .about-hero,
-    .values,
-    .about-mission {
+    .about-mission,
+    .about-advantages,
+    .about-values,
+    .about-responsibility {
         padding-top: 56px;
         padding-bottom: 60px;
     }
@@ -3133,11 +3242,18 @@ Svyat future millioner Developer: На узких экранах карточк�
     }
 
     .about-hero__title,
-    .values__title,
-    .about-mission__title {
+    .about-mission__title,
+    .about-advantages__title,
+    .about-values__title,
+    .about-responsibility__title {
         margin-top: 14px;
         font-size: 30px;
         line-height: 1.15;
+    }
+
+    .about-mission__text {
+        margin-top: 16px;
+        font-size: 15px;
     }
 
     .about-hero__body {
@@ -3157,21 +3273,39 @@ Svyat future millioner Developer: На узких экранах карточк�
         line-height: 1.55;
     }
 
-    .values__heading {
+    .about-mission__text {
+        margin-top: 16px;
+        font-size: 15px;
+    }
+
+    .about-advantages__heading,
+    .about-values__heading {
         margin-bottom: 28px;
     }
 
-    .values__grid {
+    .about-advantages__grid,
+    .about-values__grid {
         grid-template-columns: 1fr;
         gap: 12px;
     }
 
-    .values__card {
+    .about-advantages__card {
         min-height: 0;
         padding: 22px 20px;
     }
 
-    .values__card-num {
+    .about-advantages__card-num {
         margin-bottom: 28px;
+    }
+
+    .about-values__card {
+        min-height: 0;
+        padding: 22px 20px;
+        gap: 10px 16px;
+    }
+
+    .about-values__card-num {
+        width: 40px;
+        height: 40px;
     }
 }
