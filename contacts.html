@@ -62,23 +62,50 @@
     </header>
     <!-- /.header -->
 
-    <main>
-        <section class="contacts">
-            <div class="contacts__container container">
+    <section class="contacts">
+        <div class="container">
                 <div class="contacts__heading">
                     <span class="contacts__eyebrow">/ КОНТАКТЫ</span>
                     <h1 class="contacts__title">Свяжитесь с нами</h1>
                 </div>
                 <!-- /.contacts__heading -->
 
-                <section class="contacts__details" aria-labelledby="contacts-company-title">
+                <div class="contacts__details" aria-labelledby="contacts-company-title">
                     <div class="contacts__company">
-                        <h2 class="contacts__company-title" id="contacts-company-title">ВентСаилПродакшен</h2>
-                        <div class="contacts__company-links">
-                            <a class="contacts__link" href="mailto:vent-vsp@mail.ru">vent-vsp@mail.ru</a>
-                            <a class="contacts__link" href="mailto:info@vent-systema.ru">info@vent-systema.ru</a>
+                        <div class="contacts__company-heading">
+                            <span class="contacts__company-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M4 20V6l8-3 8 3v14M8 9h.01M8 13h.01M8 17h.01M12 9h.01M12 13h.01M12 17h.01M16 9h.01M16 13h.01M16 17h.01M3 20h18"/>
+                                </svg>
+                            </span>
+                            <div class="contacts__company-info">
+                                <span class="contacts__company-caption">КОНТАКТНАЯ ИНФОРМАЦИЯ</span>
+                                <h2 class="contacts__company-title" id="contacts-company-title">ВентСаилПродакшен</h2>
+                            </div>
                         </div>
-                        <address class="contacts__address">Раменское, Карла Маркса, дом 5, офис 327</address>
+                        <div class="contacts__company-links">
+                            <a class="contacts__email-link" href="mailto:vent-vsp@mail.ru">
+                                <span class="contacts__email-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4zM4 7l8 6 8-6"/></svg>
+                                </span>
+                                <span>vent-vsp@mail.ru</span>
+                            </a>
+                            <a class="contacts__email-link" href="mailto:info@vent-systema.ru">
+                                <span class="contacts__email-icon" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4zM4 7l8 6 8-6"/></svg>
+                                </span>
+                                <span>info@vent-systema.ru</span>
+                            </a>
+                        </div>
+                        <div class="contacts__address-card">
+                            <span class="contacts__address-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                            </span>
+                            <div class="contacts__address-copy">
+                                <span class="contacts__address-label">Адрес офиса</span>
+                                <address class="contacts__address">Раменское, Карла Маркса, дом 5, офис 327</address>
+                            </div>
+                        </div>
                     </div>
                     <!-- /.contacts__company -->
                     <div class="contacts__meta">
@@ -92,11 +119,11 @@
                         </div>
                     </div>
                     <!-- /.contacts__meta -->
-                </section>
+                </div>
                 <!-- /.contacts__details -->
 
                 <div class="contacts__main">
-                    <section class="contacts__form-panel" aria-labelledby="contacts-form-title">
+                    <div class="contacts__form-panel" aria-labelledby="contacts-form-title">
                         <div class="contacts__socials">
                             <h2 class="contacts__socials-title">Мы в социальных сетях:</h2>
                             <div class="contacts__social-list" aria-label="Социальные сети">
@@ -138,10 +165,10 @@
                             </label>
                             <button class="contacts__submit" type="submit">Отправить сообщение</button>
                         </form>
-                    </section>
+                    </div>
                     <!-- /.contacts__form-panel -->
 
-                    <section class="contacts__map-panel" aria-labelledby="contacts-map-title">
+                    <div class="contacts__map-panel" aria-labelledby="contacts-map-title">
                         <div class="contacts__map-heading">
                             <h2 class="contacts__map-title" id="contacts-map-title">Мы на карте</h2>
                             <a class="contacts__map-link" href="https://yandex.ru/maps/org/ventsailprodakshen/12372924938/" target="_blank" rel="noopener noreferrer">Открыть в Яндекс Картах</a>
@@ -157,13 +184,12 @@
                             </iframe>
                         </div>
                         <!-- /.contacts__map -->
-                    </section>
+                    </div>
                     <!-- /.contacts__map-panel -->
                 </div>
                 <!-- /.contacts__main -->
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="container">
