@@ -38,6 +38,14 @@
     </header>
 
     <main>
+        <nav class="breadcrumbs container" aria-label="Хлебные крошки">
+            <ol class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a><span class="breadcrumbs__separator" aria-hidden="true">/</span></li>
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог</a><span class="breadcrumbs__separator" aria-hidden="true">/</span></li>
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog-category.html">Воздуховоды</a><span class="breadcrumbs__separator" aria-hidden="true">/</span></li>
+                <li class="breadcrumbs__item" aria-current="page"><span class="breadcrumbs__current">Адаптер прямоугольного сечения</span></li>
+            </ol>
+        </nav>
         <section class="product">
             <div class="container">
                 <div class="product__card">
@@ -56,6 +64,7 @@
                                     <input class="product__quantity" id="product-quantity" type="number" name="quantity" value="1" min="1" aria-label="Количество товара">
                                     <button class="product__cart-button" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.1a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 1.9-1.4L22 9H6"/><circle cx="10" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg><span>В корзину</span></button>
                                 </div>
+                                <button class="product__quick-buy" type="button">Купить в один клик</button>
                             </div>
                         </div>
                         <div class="product__summary">
@@ -90,6 +99,10 @@
                                 <div class="product__characteristics-item"><dt>Тип фланца</dt><dd>Без шины — шина R30</dd></div>
                                 <div class="product__characteristics-item"><dt>Толщина металла, мм</dt><dd>Оц. ст. 0,5 — оц. ст. 1,2</dd></div>
                             </dl>
+                            <a class="product__specification-download" href="#">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l5 5v13H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><path d="M14 3v5h5M12 11v7M9 15l3 3 3-3"/></svg>
+                                <span>Скачать спецификацию PDF2</span>
+                            </a>
                         </div>
                     </div>
 
@@ -149,6 +162,45 @@
                 </div>
             </div>
         </section>
+
+        <section class="product__related">
+            <div class="container">
+                <div class="product__related-heading">
+                    <span class="product__related-eyebrow">/ РЕКОМЕНДУЕМ</span>
+                    <h2 class="product__related-title">Похожие товары</h2>
+                </div>
+                <div class="catalog-category__grid">
+                    <a href="product.html" class="catalog-category__card" data-category="fittings">
+                        <div class="catalog-category__card-image" aria-hidden="true">
+                            <img src="./images/airs/air-01.jpg" alt="" class="catalog-category__card-image-content">
+                        </div>
+                        <h3 class="catalog-category__card-title">Адаптер прямоугольного сечения</h3>
+                        <p class="catalog-category__card-description">Для подключения решёток, диффузоров и оборудования к прямоугольному каналу.</p>
+                    </a>
+                    <a href="#" class="catalog-category__card" data-category="flexible">
+                        <div class="catalog-category__card-image" aria-hidden="true">
+                            <img src="./images/airs/air-01.jpg" alt="" class="catalog-category__card-image-content">
+                        </div>
+                        <h3 class="catalog-category__card-title">Воздуховод гибкий неизолированный металлизированный серии МЕ</h3>
+                        <p class="catalog-category__card-description">Гибкий воздуховод с металлизированной плёнкой и спиральным каркасом.</p>
+                    </a>
+                    <a href="#" class="catalog-category__card" data-category="flexible">
+                        <div class="catalog-category__card-image" aria-hidden="true">
+                            <img src="./images/airs/air-01.jpg" alt="" class="catalog-category__card-image-content">
+                        </div>
+                        <h3 class="catalog-category__card-title">Воздуховод гибкий неизолированный фольгированный серии АЛ</h3>
+                        <p class="catalog-category__card-description">Гибкий воздуховод с алюминиевой фольгой и спиральным каркасом.</p>
+                    </a>
+                    <a href="#" class="catalog-category__card" data-category="insulated">
+                        <div class="catalog-category__card-image" aria-hidden="true">
+                            <img src="./images/airs/air-01.jpg" alt="" class="catalog-category__card-image-content">
+                        </div>
+                        <h3 class="catalog-category__card-title">Воздуховод гибкий теплоизолированный серии ИзоАЛ</h3>
+                        <p class="catalog-category__card-description">Гибкий воздуховод серии АЛ с теплоизоляционным слоем.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -170,7 +222,7 @@
                         <div class="footer__column">
                             <h2 class="footer__column-title">Продукция</h2>
                             <a href="catalog.html" class="footer__link">Каталог оборудования</a>
-                            <a href="air-ducts.html" class="footer__link">Воздуховоды</a>
+                            <a href="catalog-category.html" class="footer__link">Воздуховоды</a>
                             <a href="#" class="footer__link">Промышленные вентиляторы</a>
                             <a href="#" class="footer__link">Фильтры очистки</a>
                         </div>

@@ -459,7 +459,7 @@ button {
     opacity: 0.4;
 }
 
-/* ===== Products ===== */
+/* ===== Procatalog-category ===== */
 .products {
     padding: 120px 0;
     background-color: var(--light);
@@ -4306,18 +4306,18 @@ Svyat future millioner Developer: На узких экранах карточк�
     }
 }
 
-/* ===== Air ducts catalog page ===== */
-.ducts {
+/* ===== Air catalog-category catalog page ===== */
+.catalog-category {
     padding: 104px 0 120px;
     background-color: var(--light-bg);
 }
 
-.ducts__heading {
+.catalog-category__heading {
     max-width: 960px;
     margin-bottom: 40px;
 }
 
-.ducts__eyebrow {
+.catalog-category__eyebrow {
     display: block;
     color: var(--light-text);
     font-size: 10px;
@@ -4325,7 +4325,7 @@ Svyat future millioner Developer: На узких экранах карточк�
     letter-spacing: 0.08em;
 }
 
-.ducts__title {
+.catalog-category__title {
     margin-top: 16px;
     color: var(--dark);
     font-size: 56px;
@@ -4333,7 +4333,7 @@ Svyat future millioner Developer: На узких экранах карточк�
     line-height: 1.1;
 }
 
-.ducts__description {
+.catalog-category__description {
     max-width: 680px;
     margin-top: 16px;
     color: var(--light-text);
@@ -4341,14 +4341,14 @@ Svyat future millioner Developer: На узких экранах карточк�
     line-height: 1.5;
 }
 
-.ducts__tabs {
+.catalog-category__tabs {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 32px;
 }
 
-.ducts__tab {
+.catalog-category__tab {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -4365,26 +4365,26 @@ Svyat future millioner Developer: На узких экранах карточк�
     transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
 }
 
-.ducts__tab:hover {
+.catalog-category__tab:hover {
     border-color: var(--accent);
     color: var(--accent);
 }
 
-.ducts__tab--active,
-.ducts__tab--active:hover {
+.catalog-category__tab--active,
+.catalog-category__tab--active:hover {
     border-color: var(--accent);
     background-color: var(--accent);
     color: var(--light);
 }
 
-.ducts__grid {
+.catalog-category__grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-auto-rows: 1fr;
     gap: 20px;
 }
 
-.ducts__card {
+.catalog-category__card {
     display: flex;
     min-width: 0;
     min-height: 400px;
@@ -4399,16 +4399,16 @@ Svyat future millioner Developer: На узких экранах карточк�
     align-self: stretch;
 }
 
-.ducts__card:hover {
+.catalog-category__card:hover {
     border-color: var(--accent);
 }
 
-.ducts__card:focus-visible {
+.catalog-category__card:focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 3px;
 }
 
-.ducts__card-image {
+.catalog-category__card-image {
     display: block;
     width: 100%;
     height: 250px;
@@ -4416,13 +4416,13 @@ Svyat future millioner Developer: На узких экранах карточк�
     border-radius: 16px;
 }
 
-.ducts__card-image-content {
+.catalog-category__card-image-content {
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
 
-.ducts__card-title {
+.catalog-category__card-title {
     margin-bottom: 8px;
     color: var(--dark);
     font-size: 18px;
@@ -4430,7 +4430,7 @@ Svyat future millioner Developer: На узких экранах карточк�
     line-height: 1.3;
 }
 
-.ducts__card-description {
+.catalog-category__card-description {
     margin-top: 20px;
     color: var(--light-text);
     font-size: 14px;
@@ -4438,78 +4438,78 @@ Svyat future millioner Developer: На узких экранах карточк�
 }
 
 @media (max-width: 1024px) {
-    .ducts {
+    .catalog-category {
         padding: 80px 0;
     }
 
-    .ducts__title {
+    .catalog-category__title {
         font-size: 44px;
     }
 
-    .ducts__grid {
+    .catalog-category__grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 16px;
     }
 }
 
 @media (max-width: 768px) {
-    .ducts {
+    .catalog-category {
         padding: 64px 0;
     }
 
-    .ducts__title {
+    .catalog-category__title {
         font-size: 36px;
     }
 
-    .ducts__description {
+    .catalog-category__description {
         font-size: 16px;
     }
 
-    .ducts__grid {
+    .catalog-category__grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
 @media (max-width: 480px) {
-    .ducts {
+    .catalog-category {
         padding: 48px 0 60px;
     }
 
-    .ducts__heading {
+    .catalog-category__heading {
         margin-bottom: 28px;
     }
 
-    .ducts__title {
+    .catalog-category__title {
         font-size: 30px;
     }
 
-    .ducts__description {
+    .catalog-category__description {
         font-size: 15px;
     }
 
-    .ducts__tabs {
+    .catalog-category__tabs {
         gap: 6px;
         margin-bottom: 24px;
     }
 
-    .ducts__tab {
+    .catalog-category__tab {
         min-height: 36px;
         padding: 8px 12px;
         font-size: 12px;
     }
 
-    .ducts__grid {
+    .catalog-category__grid {
         grid-template-columns: 1fr;
         gap: 12px;
     }
 
-    .ducts__card {
+    .catalog-category__card {
         min-height: 0;
         padding: 14px;
         border-radius: 20px;
     }
 
-    .ducts__card-image {
+    .catalog-category__card-image {
         height: 190px;
         flex-basis: 190px;
         margin-bottom: 16px;
@@ -4662,6 +4662,28 @@ Svyat future millioner Developer: На узких экранах карточк�
     flex: 1 1 auto;
 }
 
+.product__quick-buy {
+    display: flex;
+    width: 100%;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+    padding: 0 18px;
+    border: 1px solid #E4E6EA;
+    border-radius: 8px;
+    background-color: var(--light-bg);
+    color: var(--dark);
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.product__quick-buy:hover {
+    border-color: #D4D8E0;
+    background-color: #E4E6EA;
+}
+
 .product__cart-button:hover,
 .product__modification-button:hover {
     background-color: #1A3FD9;
@@ -4730,6 +4752,7 @@ Svyat future millioner Developer: На узких экранах карточк�
 
 .product__details {
     display: grid;
+    grid-template-columns: minmax(0, 1fr);
     gap: 20px;
     margin-top: 24px;
 }
@@ -4785,6 +4808,37 @@ Svyat future millioner Developer: На узких экранах карточк�
 
 .product__characteristics-item {
     font-size: 14px;
+}
+
+.product__specification-download {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
+    gap: 10px;
+    margin-top: 18px;
+    padding: 0 16px;
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.product__specification-download:hover {
+    background-color: var(--accent);
+    color: var(--light);
+}
+
+.product__specification-download svg {
+    width: 18px;
+    height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 .product__table-note {
@@ -4952,5 +5006,96 @@ Svyat future millioner Developer: На узких экранах карточк�
 
     .product__section-title {
         font-size: 21px;
+    }
+
+    .product__specification-download {
+        width: 100%;
+        justify-content: center;
+        padding: 0 8px;
+        font-size: 12px;
+    }
+}
+
+/* ===== Breadcrumbs ===== */
+.breadcrumbs {
+    margin: 20px auto 16px;
+    background-color: transparent;
+    margin-bottom: -30px;
+}
+
+.breadcrumbs__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    list-style: none;
+}
+
+.breadcrumbs__item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--light-text);
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.breadcrumbs__link {
+    color: var(--light-text);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.breadcrumbs__link:hover {
+    color: var(--accent);
+}
+
+.breadcrumbs__separator {
+    color: #9A9DA5;
+}
+
+.breadcrumbs__current {
+    color: var(--dark);
+}
+
+/* Related products */
+.product__related {
+    padding: 64px 0 112px;
+    background-color: var(--light-bg);
+}
+
+.product__related-heading {
+    margin-bottom: 32px;
+}
+
+.product__related-eyebrow {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--light-text);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+.product__related-title {
+    color: var(--dark);
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    .product__related {
+        padding: 52px 0 72px;
+    }
+
+    .product__related-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product__related {
+        padding: 44px 0 56px;
     }
 }
