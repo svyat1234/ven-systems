@@ -586,6 +586,14 @@ button {
     background-color: var(--accent);
 }
 
+.hero__button--secondary .hero__button-icon path {
+    transition: fill 0.2s ease;
+}
+
+.hero__button--secondary:hover .hero__button-icon path {
+    fill: var(--light);
+}
+
 .hero__button-icon {
     display: flex;
     align-items: center;
