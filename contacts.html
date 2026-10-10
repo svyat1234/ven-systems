@@ -33,24 +33,35 @@
                             </span>
                             Каталог
                         </a>
-                        <a href="delivery.html" class="header__link">Оплата и доставка</a>
-                        <a href="#" class="header__link">Производство</a>
-                        <a href="#" class="header__link">Проекты</a>
+                        <a href="delivery.html" class="header__link">Доставка и оплата</a>
+                        <a href="#" class="header__link">Кейсы</a>
+                        <a href="#" class="header__link">Блог</a>
+                        <div class="header__nav-item header__nav-item--services">
+                            <button class="header__link header__link--services" type="button" aria-haspopup="true" aria-controls="header-services">
+                                Услуги
+                                <span class="header__services-caret" aria-hidden="true"></span>
+                            </button>
+                            <div class="header__submenu" id="header-services">
+                                <a href="installation.html" class="header__submenu-link">Монтаж систем вентиляции</a>
+                                <a href="design.html" class="header__submenu-link">Проектирование систем вентиляции</a>
+                                <a href="handling.html" class="header__submenu-link">Обслуживание систем вентиляции</a>
+                            </div>
+                        </div>
                         <a href="about.html" class="header__link">О компании</a>
                         <a href="contacts.html" class="header__link header__link--active" aria-current="page">Контакты</a>
                     </nav>
                     <!-- /.header__nav -->
                     <div class="header__action">
-                        <a href="tel:+74951981401" class="header__phone">8 (495) 198-14-01</a>
-                        <a href="mailto:info@vent-systema.ru" class="header__email">info@vent-systema.ru</a>
-                        <a href="#contacts-form" class="header__button">
-                            <span class="header__button-text">Написать нам</span>
-                            <span class="header__button-icon" aria-hidden="true">
+                        <a href="tel:+74951981401" class="header__phone">+7 (495) 198-14-01</a>
+                        <a href="mailto:vent-vsp@mail.ru" class="header__email">vent-vsp@mail.ru</a>
+                        <button class="header__button">
+                            <span class="header__button-text">Получить КП</span>
+                            <span class="header__button-icon">
                                 <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9 1L13 5M13 5L9 9M13 5H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9 1L13 5M13 5L9 9M13 5H1" stroke="#090A0D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </span>
-                        </a>
+                        </button>
                     </div>
                     <!-- /.header__action -->
                 </div>
@@ -71,7 +82,6 @@
     <section class="contacts">
         <div class="container">
                 <div class="contacts__heading">
-                    <span class="contacts__eyebrow">/ КОНТАКТЫ</span>
                     <h1 class="contacts__title">Свяжитесь с нами</h1>
                 </div>
                 <!-- /.contacts__heading -->
@@ -133,20 +143,20 @@
                         <div class="contacts__socials">
                             <h2 class="contacts__socials-title">Мы в социальных сетях:</h2>
                             <div class="contacts__social-list" aria-label="Социальные сети">
-                                <span class="contacts__social" role="img" aria-label="Instagram">
+                                <a class="contacts__social" href="#" aria-label="Instagram">
                                     <svg viewBox="0 0 24 24" aria-hidden="true">
                                         <rect x="4" y="4" width="16" height="16" rx="5"/>
                                         <circle cx="12" cy="12" r="3.5"/>
                                         <circle class="contacts__social-dot" cx="17.5" cy="6.7" r="1"/>
                                     </svg>
-                                </span>
-                                <span class="contacts__social contacts__social--vk" role="img" aria-label="ВКонтакте">vk</span>
-                                <span class="contacts__social" role="img" aria-label="WhatsApp">
+                                </a>
+                                <a class="contacts__social contacts__social--vk" href="#" aria-label="ВКонтакте">vk</a>
+                                <a class="contacts__social" href="#" aria-label="WhatsApp">
                                     <svg viewBox="0 0 24 24" aria-hidden="true">
                                         <path d="M20 11.7a8 8 0 0 1-11.8 7L4 20l1.3-4A8 8 0 1 1 20 11.7Z"/>
                                         <path d="M9 8.5c.5 2.5 2 4 4.5 5l1.2-1.2 2 .9c-.1 1.1-.9 1.9-2 2-3.8-.3-6.9-3.4-7.2-7.2.1-1.1.9-1.9 2-2l.9 2L9 8.5Z"/>
                                     </svg>
-                                </span>
+                                </a>
                             </div>
                         </div>
                         <!-- /.contacts__socials -->
@@ -197,12 +207,13 @@
         </div>
     </section>
 
+
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__top">
                     <div class="footer__brand">
-                        <a href="/" class="footer__logo" aria-label="AERON — на главную">
+                        <a href="#" class="footer__logo" aria-label="AERON — на главную">
                             <img src="images/footer-logo.svg" alt="AERON — Engineering / Ventilation" class="footer__logo-img">
                         </a>
                         <p class="footer__description">
@@ -213,33 +224,28 @@
                     <nav class="footer__links" aria-label="Разделы сайта">
                         <div class="footer__column">
                             <h2 class="footer__column-title">Услуги</h2>
-                            <a href="#" class="footer__link">Проектирование ОВ</a>
-                            <a href="#" class="footer__link">Монтажные работы</a>
-                            <a href="#" class="footer__link">Пусконаладка</a>
-                            <a href="#" class="footer__link">Сервисное обслуживание</a>
+                            <a href="#" class="footer__link">Монтаж систем вентиляции</a>
+                            <a href="design.html" class="footer__link">Проектирование систем вентиляции</a>
+                            <a href="#" class="footer__link">Обслуживание систем вентиляции</a>
                         </div>
                         <div class="footer__column">
                             <h2 class="footer__column-title">Продукция</h2>
-                            <a href="catalog.html" class="footer__link">Каталог оборудования</a>
-                            <a href="catalog-category.html" class="footer__link">Воздуховоды</a>
-                            <a href="#" class="footer__link">Промышленные вентиляторы</a>
-                            <a href="#" class="footer__link">Фильтры очистки</a>
-                            <a href="#" class="footer__link">Шкафы автоматики</a>
+                            <a href="catalog.html" class="footer__link">Каталог продукции</a>
                         </div>
                         <div class="footer__column">
                             <h2 class="footer__column-title">Компания</h2>
                             <a href="about.html" class="footer__link">О компании</a>
+                            <a href="#" class="footer__link">Кейсы</a>
+                            <a href="#" class="footer__link">Блог</a>
+                            <a href="delivery.html" class="footer__link">Доставка и оплата</a>
                             <a href="contacts.html" class="footer__link">Контакты</a>
-                            <a href="#" class="footer__link">Наши проекты</a>
-                            <a href="#" class="footer__link">Лицензии и СРО</a>
-                            <a href="#" class="footer__link">Производственная база</a>
                         </div>
                     </nav>
                     <!-- /.footer__links -->
                 </div>
                 <!-- /.footer__top -->
                 <div class="footer__bottom">
-                    <p class="footer__copyright">© 2025 AERON Engineering. Все права защищены.</p>
+                    <p class="footer__copyright">© 2026 AERON Engineering. Все права защищены.</p>
                     <nav class="footer__legal" aria-label="Правовая информация">
                         <a href="#" class="footer__legal-link">Политика конфиденциальности</a>
                         <a href="#" class="footer__legal-link">Карта сайта</a>
@@ -249,6 +255,37 @@
             </div>
             <!-- /.footer__inner -->
         </div>
+        <!-- /.container -->
     </footer>
+    <!-- /.footer -->
+
+    <dialog class="feedback-modal" aria-labelledby="feedback-modal-title">
+        <div class="feedback-modal__content">
+            <button class="feedback-modal__close" type="button" aria-label="Закрыть окно">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                    <path d="M3 3L15 15M15 3L3 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <span class="feedback-modal__eyebrow">/ СВЯЗАТЬСЯ С НАМИ</span>
+            <h2 class="feedback-modal__title" id="feedback-modal-title">Обратный звонок</h2>
+            <p class="feedback-modal__description">Отправьте запрос через контактную форму, и мы Вам обязательно перезвоним в ближайшее время.</p>
+            <form class="feedback-modal__form">
+                <label class="feedback-modal__field">
+                    <span class="feedback-modal__label">Имя</span>
+                    <input class="feedback-modal__input" type="text" name="name" placeholder="Ваше имя" autocomplete="name" required>
+                </label>
+                <label class="feedback-modal__field">
+                    <span class="feedback-modal__label">Телефон</span>
+                    <input class="feedback-modal__input" type="tel" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" required>
+                </label>
+                <label class="feedback-modal__field">
+                    <span class="feedback-modal__label">Комментарий</span>
+                    <textarea class="feedback-modal__input feedback-modal__textarea" name="comment" placeholder="Ваш комментарий"></textarea>
+                </label>
+                <button class="feedback-modal__submit" type="submit">Отправить запрос</button>
+            </form>
+        </div>
+    </dialog>
+
 </body>
 </html>
